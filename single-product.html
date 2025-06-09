@@ -28,7 +28,7 @@ https://www.tooplate.com/view/2114-pixie
 
   <body>
     
-    <!-- Pre Header -->
+    <!-- Pre Header Starts Here -->
     <div id="pre-header">
       <div class="container">
         <div class="row">
@@ -38,8 +38,9 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
+    <!-- Pre Header Ends Here -->
 
-    <!-- Navigation -->
+    <!-- Navigation Bar Starts Here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" alt=""></a>
@@ -66,20 +67,24 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </nav>
+    <!-- Navigation Bar Ends Here -->
 
     <!-- Page Content -->
-    <!-- Single Starts Here -->
+    <!-- Single Product Details Section Starts Here -->
     <div class="single-product">
       <div class="container">
         <div class="row">
+          <!-- Section Heading -->
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
               <h1>Single Product</h1>
             </div>
           </div>
+          <!-- Product Image Gallery Starts Here -->
           <div class="col-md-6">
             <div class="product-slider">
+              <!-- Main Image Slider -->
               <div id="slider" class="flexslider">
                 <ul class="slides">
                   <li>
@@ -97,6 +102,7 @@ https://www.tooplate.com/view/2114-pixie
                   <!-- items mirrored twice, total of 12 -->
                 </ul>
               </div>
+              <!-- Thumbnail Navigator -->
               <div id="carousel" class="flexslider">
                 <ul class="slides">
                   <li>
@@ -116,12 +122,19 @@ https://www.tooplate.com/view/2114-pixie
               </div>
             </div>
           </div>
+          <!-- Product Image Gallery Ends Here -->
+          <!-- Product Details (Name, Price, Description, etc.) Starts Here -->
           <div class="col-md-6">
             <div class="right-content">
+              <!-- Product Name -->
               <h4>Single Product Name</h4>
+              <!-- Product Price -->
               <h6>₹ 55.00</h6>
+              <!-- Product Description -->
               <p>Proin commodo, diam a ultricies sagittis, erat odio rhoncus metus, eu feugiat lorem lacus aliquet arcu. Curabitur in gravida nisi, non placerat nibh. Praesent sit amet diam ultrices, commodo turpis id, dignissim leo. Suspendisse mauris massa, porttitor non fermentum vel, ullamcorper scelerisque velit. </p>
+              <!-- Stock Information -->
               <span>7 left on stock</span>
+              <!-- Add to Cart / Purchase Options Starts Here -->
               <form action="" method="get">
                 <label for="quantity">Quantity:</label>
                 <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
@@ -130,6 +143,8 @@ https://www.tooplate.com/view/2114-pixie
                     value="1">
                 <input type="submit" class="button" value="Order Now!">
               </form>
+              <!-- Add to Cart / Purchase Options Ends Here -->
+              <!-- Additional Product Info (Category, Share) -->
               <div class="down-content">
                 <div class="categories">
                   <h6>Category: <span><a href="#">Pants</a>,<a href="#">Women</a>,<a href="#">Lifestyle</a></span></h6>
@@ -140,13 +155,14 @@ https://www.tooplate.com/view/2114-pixie
               </div>
             </div>
           </div>
+          <!-- Product Details Ends Here -->
         </div>
       </div>
     </div>
-    <!-- Single Page Ends Here -->
+    <!-- Single Product Details Section Ends Here -->
 
 
-    <!-- Similar Starts Here -->
+    <!-- Related Products Section ("You May Also Like") Starts Here -->
     <div class="featured-items">
       <div class="container">
         <div class="row">
@@ -158,6 +174,7 @@ https://www.tooplate.com/view/2114-pixie
           </div>
           <div class="col-md-12">
             <div class="owl-carousel owl-theme">
+              <!-- Individual Related Product Item -->
               <a href="single-product.html">
                 <div class="featured-item">
                   <img src="assets/images/item-01.jpg" alt="Item 1">
@@ -165,6 +182,7 @@ https://www.tooplate.com/view/2114-pixie
                   <h6>₹ 15.00</h6>
                 </div>
               </a>
+              <!-- More related items... -->
               <a href="single-product.html">
                 <div class="featured-item">
                   <img src="assets/images/item-02.jpg" alt="Item 2">
@@ -226,10 +244,10 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
-    <!-- Similar Ends Here -->
+    <!-- Related Products Section Ends Here -->
 
 
-    <!-- Subscribe Form Starts Here -->
+    <!-- Subscribe Form Section Starts Here -->
     <div class="subscribe-form">
       <div class="container">
         <div class="row">
@@ -266,11 +284,11 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
-    <!-- Subscribe Form Ends Here -->
+    <!-- Subscribe Form Section Ends Here -->
 
 
     
-    <!-- Footer Starts Here -->
+    <!-- Footer Section Starts Here -->
     <div class="footer">
       <div class="container">
         <div class="row">
@@ -303,10 +321,10 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
-    <!-- Footer Ends Here -->
+    <!-- Footer Section Ends Here -->
 
 
-    <!-- Sub Footer Starts Here -->
+    <!-- Sub Footer Section Starts Here -->
     <div class="sub-footer">
       <div class="container">
         <div class="row">
@@ -320,7 +338,7 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
-    <!-- Sub Footer Ends Here -->
+    <!-- Sub Footer Section Ends Here -->
 
 
     <!-- Bootstrap core JavaScript -->
@@ -332,9 +350,11 @@ https://www.tooplate.com/view/2114-pixie
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/isotope.js"></script>
+    <!-- FlexSlider script for product image gallery -->
     <script src="assets/js/flex-slider.js"></script>
 
 
+    <!-- Inline script for form field clearing (consider moving to a .js file) -->
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the

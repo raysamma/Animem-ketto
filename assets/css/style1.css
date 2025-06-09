@@ -1,156 +1,211 @@
+/*
+ * Styles for the Registration Page (Registration.html)
+ *
+ * This CSS file defines the layout, appearance, and responsiveness
+ * of the user registration form. It uses Flexbox for layout and
+ * includes custom styling for form elements, input fields,
+ * and gender selection.
+ */
+
+/* Import Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Global Reset and Default Font */
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-  color: white;
+  box-sizing: border-box; /* Ensures padding and border don't add to element's total width/height */
+  font-family: 'Poppins',sans-serif; /* Default font for the page */
+  color: white; /* Default text color, assuming a dark background from body style */
 }
-body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-repeat: no-repeat;
-   width: 100%;
-   background-size: cover;
 
-}
-.container{
-  max-width: 700px;
+/* Body Styling - Full viewport height, flex centering, and background */
+body{
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 10px; /* Padding around the content */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
   width: 100%;
-  background-color: transparent;
-  padding: 25px 30px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  background-size: cover; /* Ensure background image covers the whole area */
 }
+
+/* Main container for the registration form */
+.container{
+  max-width: 700px; /* Maximum width of the form container */
+  width: 100%; /* Responsive width */
+  background-color: transparent; /* Transparent background, relies on body background */
+  padding: 25px 30px; /* Padding inside the container */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+}
+
+/* Title of the registration form (e.g., "Registration") */
 .container .title{
   font-size: 25px;
   font-weight: 500;
-  position: relative;
+  position: relative; /* For positioning the ::before pseudo-element */
 }
+
+/* Decorative underline for the title */
 .container .title::before{
-  content: "";
+  content: ""; /* Necessary for pseudo-elements to appear */
   position: absolute;
   left: 0;
   bottom: 0;
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Gradient color for the underline */
 }
+
+/* Flex container for user detail input fields */
 .content form .user-details{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute space between items */
+  margin: 20px 0 12px 0; /* Margins around the container */
 }
+
+/* Individual input box container within user-details */
 form .user-details .input-box{
   margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 2 - 20px); /* Calculate width for two columns with spacing */
 }
+
+/* Labels for input fields (e.g., "Username", "Email") */
 form .input-box span.details{
-  display: block;
+  display: block; /* Make span take full width */
   font-weight: 500;
   margin-bottom: 5px;
-  color: white;
+  color: white; /* Explicitly white, though inherited */
 }
+
+/* General heading style (reused or defined separately) */
 .heading-section{
     text-align: center;
 }
+
+/* Styling for text input fields */
 .user-details .input-box input{
   height: 45px;
   width: 100%;
-  outline: none;
+  outline: none; /* Remove default focus outline */
   font-size: 16px;
   border-radius: 5px;
-  padding-left: 15px;
-  border: 1px solid #ccc;
-  border-bottom-width: 2px;
-  transition: all 0.3s ease;
-  background-color: rgba(233, 233, 233, 0.548);
+  padding-left: 15px; /* Padding for text inside input */
+  border: 1px solid #ccc; /* Default border */
+  border-bottom-width: 2px; /* Thicker bottom border */
+  transition: all 0.3s ease; /* Smooth transition for border changes */
+  background-color: rgba(233, 233, 233, 0.548); /* Light, semi-transparent background */
 }
+
+/* Styling for input fields when focused or containing valid input */
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
-  border-color: #9b59b6;
+.user-details .input-box input:valid{ /* :valid pseudo-class can be used if input has validation attributes like 'required' */
+  border-color: #9b59b6; /* Change border color on focus/valid state */
 }
+
+/* Title for the gender selection section */
  form .gender-details .gender-title{
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: white; /* Explicitly white */
  }
+
+ /* Container for gender radio button options */
  form .category{
    display: flex;
-   width: 80%;
+   width: 80%; /* Take 80% of available width */
    margin: 14px 0 ;
-   gap: 10px;
+   gap: 10px; /* Space between gender options */
  }
+
+ /* Styling for labels associated with gender radio buttons */
  form .category label{
    display: flex;
-   align-items: center;
+   align-items: center; /* Align custom dot and text vertically */
    cursor: pointer;
  }
+
+ /* Custom radio button appearance (the "dot") */
  form .category label .dot{
   height: 18px;
   width: 18px;
-  border-radius: 50%;
+  border-radius: 50%; /* Make it circular */
   margin-right: 10px;
-  background: #d9d9d9;
-  border: 5px solid transparent;
-  transition: all 0.3s ease;
+  background: #d9d9d9; /* Default background for the dot */
+  border: 5px solid transparent; /* Transparent border, changes on check */
+  transition: all 0.3s ease; /* Smooth transition for checked state */
 }
- #dot-1:checked ~ .category label .one,
+
+/* Styling for the custom dot when the corresponding radio button is checked */
+ #dot-1:checked ~ .category label .one, /* Using general sibling combinator (~) */
  #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #9b59b6;
-   border-color: #d9d9d9;
+ #dot-3:checked ~ .category label .three{ /* Assumes a third gender option might exist with class "three" */
+   background: #9b59b6; /* Purple background when checked */
+   border-color: #d9d9d9; /* Light grey border when checked */
  }
+
+ /* Hide the default radio input elements */
  form input[type="radio"]{
    display: none;
  }
+
+ /* Container for the submit button */
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 35px 0; /* Margin above and below the button */
  }
+
+ /* Submit button styling */
  form .button input{
    height: 100%;
    width: 100%;
    border-radius: 5px;
-   border: none;
-   color: #fff;
+   border: none; /* No border */
+   color: #fff; /* White text */
    font-size: 18px;
    font-weight: 500;
    letter-spacing: 1px;
    cursor: pointer;
-   transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   transition: all 0.3s ease; /* Smooth transition for hover effect */
+   background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Gradient background */
  }
+
+ /* Hover effect for the submit button */
  form .button input:hover{
-  /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  /* transform: scale(0.99); /* Example of a subtle scale effect, currently commented out */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6); /* Reverse gradient on hover */
   }
+
+ /* Responsive adjustments for smaller screens */
  @media(max-width: 584px){
- .container{
-  max-width: 100%;
-}
-form .user-details .input-box{
+  .container{
+    max-width: 100%; /* Allow container to take full width */
+  }
+  form .user-details .input-box{
     margin-bottom: 15px;
-    width: 100%;
+    width: 100%; /* Stack input boxes vertically */
   }
   form .category{
-    width: 100%;
+    width: 100%; /* Gender category takes full width */
   }
+  /* Enable scrolling for user details if content overflows on small screens */
   .content form .user-details{
     max-height: 300px;
     overflow-y: scroll;
   }
+  /* Custom scrollbar for user details (WebKit browsers) */
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
-  }
-  @media(max-width: 459px){
+} /* End of @media (max-width: 584px) */
+
+/* Further responsive adjustments for very small screens */
+@media(max-width: 459px){
   .container .content .category{
-    flex-direction: column;
+    flex-direction: column; /* Stack gender options vertically */
   }
-}
+} /* End of @media (max-width: 459px) */

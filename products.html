@@ -31,6 +31,7 @@ https://www.tooplate.com/view/2114-pixie
 
   <body style="background: linear-gradient(45deg, black, transparent);">
 
+    <!-- Navigation Bar Starts Here -->
     <nav class=" navbar-expand-lg navbar-dark static-top" style="padding: 20px;">
       <div >
         <div class="row" >
@@ -63,18 +64,21 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </nav>
+    <!-- Navigation Bar Ends Here -->
 
     <!-- Page Content -->
-    <!-- Items Starts Here -->
+    <!-- Product Listing Section Starts Here -->
     <div class="featured-page">
       <div class="container">
+        <!-- Section Header and Filters -->
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="section-heading">
               <div class="line-dec"></div>
-              <h1>Featured Items</h1>
+              <h1>Featured Items</h1> <!-- This title might be generic, could be "Products" -->
             </div>
           </div>
+          <!-- Filter Buttons Starts Here -->
           <div class="col-md-8 col-sm-12">
             <div id="filters" class="button-group">
               <button class="btn btn-primary" data-filter="*">All Products</button>
@@ -83,13 +87,16 @@ https://www.tooplate.com/view/2114-pixie
               <button class="btn btn-primary" data-filter=".high">Posters</button>
             </div>
           </div>
+          <!-- Filter Buttons Ends Here -->
         </div>
       </div>
     </div>
   
+    <!-- Product Grid Starts Here -->
     <div class="featured container no-gutter">
 
         <div class="row posts">
+            <!-- Individual Product Item -->
             <div id="1" class="item new col-md-4">
               <a href="single-product.html">
                 <div class="featured-item">
@@ -198,9 +205,12 @@ https://www.tooplate.com/view/2114-pixie
                 </div>
               </a>
             </div>
+            <!-- Add more product items here -->
         </div>
     </div>
+    <!-- Product Grid Ends Here -->
 
+    <!-- Pagination Starts Here -->
     <div class="page-navigation">
       <div class="container">
         <div class="row">
@@ -215,7 +225,8 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
-    <!-- Featred Page Ends Here -->
+    <!-- Pagination Ends Here -->
+    <!-- Product Listing Section Ends Here -->
 
     
 
@@ -226,12 +237,16 @@ https://www.tooplate.com/view/2114-pixie
         <div class="row">
           <div class="col-md-12">
             <div class="sitename">
+              <!-- Site logo and name in footer -->
               <img src="images/favicon.png" alt="" width="50px">  Animemāketto
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Main Footer Ends Here -->
+
+    <!-- Sub Footer Starts Here (for copyright, etc.) -->
     <div class="sub-footer">
       <div class="container">
         <div class="row">
@@ -244,6 +259,7 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
+    <!-- Sub Footer Ends Here -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -251,11 +267,13 @@ https://www.tooplate.com/view/2114-pixie
 
 
     <!-- Additional Scripts -->
+    <!-- Isotope JS for filtering -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/isotope.js"></script>
 
 
+    <!-- Inline script for form field clearing (consider moving to a .js file) -->
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the

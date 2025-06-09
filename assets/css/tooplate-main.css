@@ -1,146 +1,172 @@
 /* 
+ * Tooplate 2114 Pixie
+ * https://www.tooplate.com/view/2114-pixie
+ *
+ * This CSS file provides the primary styling for the Pixie template by Tooplate.
+ * It has been utilized as a base for the Animemāketto e-commerce website
+ * and may contain modifications or additions to suit the project's needs.
+ */
 
-Tooplate 2114 Pixie
-
-https://www.tooplate.com/view/2114-pixie
-
-*/
-
+/* === Global Body Styles === */
 body {
-	font-family: 'Roboto', sans-serif;
-	transition: all 0.5s;
+	font-family: 'Roboto', sans-serif; /* Default font for the entire site */
+	transition: all 0.5s; /* Smooth transition for property changes (e.g., on hover) */
 }
+
+/* === Default Paragraph Styling === */
 p {
-	margin-bottom: 0px;
+	margin-bottom: 0px; /* Pixie template default, might be overridden by Bootstrap or custom styles */
 	font-size: 14px;
-	color: #4a4a4a;
-	line-height: 24px;
+	color: #4a4a4a; /* Dark grey color for text */
+	line-height: 24px; /* Spacing between lines of text */
 }
+
+/* === Default Anchor Tag Styling === */
 a {
-	text-decoration: none!important;
+	text-decoration: none!important; /* Remove underline from links, !important to ensure override */
 }
 
+/* === Copyright Text Styling (likely in footer) === */
 .copyright-text {
-	text-transform: uppercase;
+	text-transform: uppercase; /* Makes text uppercase */
 }
 
+
+/* === General Components === */
+
+/* Main Button Styling (Primary Call-to-Action) */
 .main-button a {
-	background-color: #3a8bcd;
-	border-radius: 5px;
-	padding: 10px 15px;
-	display: inline-block;
-	color: #fff;
+	background-color: #3a8bcd; /* Blue background color */
+	border-radius: 5px; /* Rounded corners */
+	padding: 10px 15px; /* Padding inside the button */
+	display: inline-block; /* Allows setting padding and margin */
+	color: #fff; /* White text color */
 	font-size: 14px;
 	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: 0.4px;
+	font-weight: 300; /* Lighter font weight */
+	letter-spacing: 0.4px; /* Spacing between letters */
 	text-decoration: none;
-	transition: all 0.5s;
+	transition: all 0.5s; /* Smooth transition for hover effects */
 }
 .main-button a:hover {
-	opacity: 0.7;
+	opacity: 0.7; /* Slight transparency on hover */
 }
+
+/* Section Heading Styling */
 .section-heading {
-	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-top: 80px; /* Space above the heading */
+	margin-bottom: 40px; /* Space below the heading */
 }
+/* Decorative line for section headings */
 .section-heading .line-dec {
 	width: 30px;
 	height: 5px;
-	background-color: #3a8bcd;
+	background-color: #3a8bcd; /* Blue line */
 }
 .section-heading h1 {
 	font-size: 22px;
-	font-weight: 700;
-	color: #1e1e1e;
-	margin-top: 15px;
+	font-weight: 700; /* Bold font weight */
+	color: #1e1e1e; /* Very dark grey/black color */
+	margin-top: 15px; /* Space above the h1 text */
 }
 
-/* Pre Header Style */
+
+/* === Pre-Header Style === */
+/* Bar above the main navigation */
 #pre-header {
-	background-color: #3a8bcd;
+	background-color: #3a8bcd; /* Blue background */
 	text-align: center;
 }
 #pre-header span {
-	color: #fff;
+	color: #fff; /* White text */
 	font-size: 15px;
 	padding: 10px 0px;
 	display: inline-block;
 }
 
-/* Header Style */
+
+/* === Header / Navigation Style === */
 .navbar .navbar-brand {
-	text-align: center;
+	text-align: center; /* Center the brand/logo */
 	width: 100%;
 	position: relative;
 	padding: 25px 0px;
 }
+/* Background for the navbar (Bootstrap override) */
 .bg-dark {
-	background-color: #fff!important;
-	border-bottom: 1px solid #eee;
+	background-color: #fff!important; /* White background, !important for override */
+	border-bottom: 1px solid #eee; /* Light grey bottom border */
 }
+/* Container for navigation links */
 #navbarResponsive {
-	z-index: 999;
-	position: absolute;
+	z-index: 999; /* Ensure navbar is above other content */
+	position: absolute; /* Positioned relative to its nearest positioned ancestor */
 	left: 50%;
-	top: 105px;
-	transform: translateX(-50%);
+	top: 105px; /* Positioned below the brand */
+	transform: translateX(-50%); /* Center the element horizontally */
 }
 .navbar-dark .navbar-nav .nav-item {
-	margin: 0px 15px;
+	margin: 0px 15px; /* Spacing between nav items */
 }
 .navbar-dark .navbar-nav .nav-link {
 	text-transform: uppercase;
 	font-size: 15px;
-	font-weight: 700;
-	color: #1e1e1e;
+	font-weight: 700; /* Bold text */
+	color: #1e1e1e; /* Dark text color for links */
 	transition: all 0.5s;
 }
+/* Styling for hovered or active navigation links */
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link, /* Styling for active link (Bootstrap classes) */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue color for active/hovered link */
 }
+/* Decorative line below the navigation items */
 .navbar:after {
 	width: 100%;
 	height: 1px;
-	background-color: #eee;
-	content: '';
+	background-color: #eee; /* Light grey line */
+	content: ''; /* Necessary for pseudo-elements */
 	position: absolute;
 	left: 0;
-	bottom: -52px;
+	bottom: -52px; /* Positioned below the navbar container */
 }
+
+/* Mobile Menu Toggle Button Styling */
 .navbar-dark .navbar-toggler-icon {
-	background-image: none;
+	background-image: none; /* Remove default Bootstrap hamburger icon image */
 }
 .navbar-dark .navbar-toggler {
-	border-color: #3a8bcd;
-	background-color: #3a8bcd;	
+	border-color: #3a8bcd; /* Blue border */
+	background-color: #3a8bcd; /* Blue background */
 	height: 50px;
-	outline: none;
+	outline: none; /* Remove focus outline */
 }
+/* Custom hamburger icon using FontAwesome */
 .navbar-dark .navbar-toggler-icon:after {
-	content: '\f0c9';
-	color: #FFF;
+	content: '\f0c9'; /* FontAwesome bars icon */
+	color: #FFF; /* White icon color */
 	font-size: 22px;
-	line-height: 30px;
-	font-family: 'FontAwesome';
+	line-height: 30px; /* Adjust vertical alignment */
+	font-family: 'FontAwesome'; /* Specify FontAwesome font family */
 }
-/* Banner Style */
+
+
+/* === Banner Style (Homepage Hero Section) === */
 .banner {
-	margin-top: 50px;
-	background-image: url(../images/banner-bg.jpg);
-	background-size: cover;
+	margin-top: 50px; /* Space above the banner */
+	background-image: url(../images/banner-bg.jpg); /* Background image */
+	background-size: cover; /* Cover the entire banner area */
 	background-repeat: no-repeat;
-	padding: 150px 0px;
-	background-position: center center;
+	padding: 150px 0px; /* Vertical padding */
+	background-position: center center; /* Center the background image */
 }
 .banner .caption {
-	background-color: rgba(250,250,250,0.9);
+	background-color: rgba(250,250,250,0.9); /* Semi-transparent white background for caption box */
 	padding: 30px;
-	max-width: 450px;
+	max-width: 450px; /* Limit width of the caption box */
 }
 .banner .caption h2 {
 	margin-top: 0px;
@@ -149,7 +175,7 @@ a {
 	font-weight: 700;
 	color: #1e1e1e;
 }
-.banner .caption .line-dec {
+.banner .caption .line-dec { /* Decorative line within banner caption */
 	width: 30px;
 	height: 5px;
 	background-color: #3a8bcd;
@@ -159,25 +185,26 @@ a {
 	margin-bottom: 20px;
 }
 
-/* Featured Style */
+
+/* === Featured Items Style (Product Grids/Carousels) === */
 .featured-items {
 	margin-bottom: 70px;
 }
-.featured-item {
+.featured-item { /* Individual item card */
 	border-radius: 5px;
-	border: 1px solid #eee;
+	border: 1px solid #eee; /* Light grey border */
 	padding: 20px;
 	transition: all 0.5s;
 }
 .featured-item:hover {
-	opacity: 0.9;
+	opacity: 0.9; /* Slight transparency on hover */
 }
 .featured-item img {
 	width: 100%;
-	aspect-ratio: 1/1;
-	object-fit: cover;
+	aspect-ratio: 1/1; /* Maintain square aspect ratio for images */
+	object-fit: cover; /* Ensure image covers the area, cropping if necessary */
 }
-.featured-item h4 {
+.featured-item h4 { /* Product name */
 	font-size: 17px;
 	font-weight: 700;
 	color: #1e1e1e;
@@ -185,85 +212,84 @@ a {
 	transition: all 0.5s;
 }
 .featured-item:hover h4 {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Change product name color on hover */
 }
-.featured-item h6 {
-	color: #3a8bcd;
+.featured-item h6 { /* Product price */
+	color: #3a8bcd; /* Blue color for price */
 	font-size: 15px;
 	font-weight: 700;
 	margin-bottom: 0px;
 }
+
+/* Owl Carousel Dots Styling (for carousels using Owl Carousel plugin) */
 .owl-theme .owl-dots {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 30px; /* Space above dots */
 }
 .owl-theme .owl-dots .owl-dot {
-	outline: none;
+	outline: none; /* Remove focus outline */
 }
-.owl-theme .owl-dots .active span {
-	background-color: #3a8bcd!important;
+.owl-theme .owl-dots .active span { /* Active dot */
+	background-color: #3a8bcd!important; /* Blue color for active dot */
 }
-.owl-theme .owl-dots .owl-dot span {
-	background-color: #aaa;
+.owl-theme .owl-dots .owl-dot span { /* Default dot styling */
+	background-color: #aaa; /* Grey color for inactive dots */
 	width: 8px;
 	height: 8px;
 	display: inline-block;
-	margin: 0px 5px;
+	margin: 0px 5px; /* Spacing between dots */
 	outline: none;
 }
 
 
-
-/* Subscribe Style */
+/* === Subscribe Form Style === */
 .subscribe-form {
-	background-color: transparent;
-	padding: 80px 0px;
+	background-color: transparent; /* Assuming a background is set on a parent or body */
+	padding: 80px 0px; /* Vertical padding */
 	text-align: center;
 }
 .subscribe-form .section-heading  {
-	margin-top: 0px;
+	margin-top: 0px; /* Reset margin for this specific section heading */
 }
 .subscribe-form .section-heading h1 {
-	color: #fff;
+	color: #fff; /* White heading text, implies dark background for this section */
 }
 .subscribe-form .section-heading .line-dec {
-	background-color: #fff;
-	margin: 0 auto;
+	background-color: #fff; /* White decorative line */
+	margin: 0 auto; /* Center the line */
 }
 .subscribe-form .main-content p {
 	font-size: 17px;
-	color: #fff;
+	color: #fff; /* White paragraph text */
 	margin-bottom: 30px;
 }
 .subscribe-form .main-content form  {
 	color: #fff;
-	display: inline;
+	display: inline; /* Allows form to be centered if its parent is text-align: center */
 }
-.subscribe-form .main-content form input {
-	display: inline;
-}
-.subscribe-form .main-content form input {
+.subscribe-form .main-content form input { /* Email input field */
+	display: inline; /* Note: This might be better as block or inline-block for layout control */
 	width: 100%;
 	height: 46px;
-	border: 1px solid #fff;
+	border: 1px solid #fff; /* White border */
 	background-color: transparent;
 	padding-left: 15px;
-	color: #fff;
+	color: #fff; /* White text input */
 	outline: none;
 }
 .subscribe-form .main-content form button:focus {
-	color: #fff!important;
+	color: #fff!important; /* Ensure text color remains white on focus */
 }
-.subscribe-form .main-content form button {
+.subscribe-form .main-content form button { /* Submit button */
 	width: 100%;
 	height: 45px;
 	cursor: pointer;
-	background-color: #fff;
+	background-color: #fff; /* White background */
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue text color */
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -275,17 +301,17 @@ a {
 }
 
 
-/* Footer Style */
+/* === Footer Style === */
 .footer {
-	text-align: center;
+	text-align: center; /* Center all footer content */
 }
 .footer ul {
 	padding: 0px;
 	margin: 0px;
 }
 .footer ul li {
-	list-style: none;
-	display: inline-block;
+	list-style: none; /* Remove default list bullets */
+	display: inline-block; /* Arrange list items horizontally */
 }
 .footer .logo img {
 	max-width: 100%;
@@ -296,68 +322,72 @@ a {
 	margin-bottom: 40px;
 }
 .footer .footer-menu ul li {
-	margin: 0px 15px;
+	margin: 0px 15px; /* Spacing between menu items */
 }
 .footer .footer-menu a {
 	font-size: 13px;
-	color: #7a7a7a;
+	color: #7a7a7a; /* Grey color for footer links */
 	text-transform: uppercase;
 	transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue color on hover */
 	text-decoration: none;
 }
 .footer .social-icons {
 	margin-bottom: 60px;
 }
 .footer .social-icons ul li {
-	margin: 0px 10px;
+	margin: 0px 10px; /* Spacing between social icons */
 }
-.footer .social-icons a {
+.footer .social-icons a { /* Individual social icon */
 	width: 32px;
 	height: 32px;
-	color: #fff;
-	background-color: #aaa;
+	color: #fff; /* White icon color */
+	background-color: #aaa; /* Grey background */
 	text-align: center;
 	display: inline-block;
-	line-height: 33px;
-	border-radius: 50%;
+	line-height: 33px; /* Vertically center icon (adjust if icon size varies) */
+	border-radius: 50%; /* Circular shape */
 	font-size: 13px;
 	transition: all 0.5s;
 }
 .footer .social-icons a:hover {
-	background-color: #3a8bcd;
+	background-color: #3a8bcd; /* Blue background on hover */
 }
 
-/* Sub Footer Style */
+
+/* === Sub Footer Style === */
+/* Bottom-most bar, usually for copyright */
 .sub-footer {
-	border-top: 1px solid #eee;
+	border-top: 1px solid #eee; /* Light grey top border */
 	text-align: center;
 }
 .sub-footer p {
 	font-size: 12px;
 	color: #7a7a7a;
-	line-height: 60px;
+	line-height: 60px; /* Vertical centering for the text */
 }
 .sub-footer a {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue color for links in sub-footer */
 	text-decoration: none;
 }
 
-/* Featured Page Style */
+
+/* === Featured Page Style (e.g., products.html) === */
 .featured-page {
-	margin-top: 130px;
+	margin-top: 130px; /* Space above the featured page content */
 	margin-bottom: 40px;
 }
-.featured-page .section-heading {
+.featured-page .section-heading { /* Resetting margins for this specific context */
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-.featured-page #filters {
+.featured-page #filters { /* Container for filter buttons */
 	margin-top: 15px;
-	text-align: right;
+	text-align: right; /* Align filter buttons to the right */
 }
+/* Styling for items within the .featured grid (likely using Isotope) */
 .featured .featured-item {
 	margin-bottom: 30px;
 	text-decoration: none;
@@ -366,124 +396,125 @@ a {
 	transition: all 0.5s;
 }
 .featured .featured-item:hover h4 {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Product name turns blue on hover */
 }
-#filter button {
+
+/* Styling for Isotope filter buttons */
+#filter button { /* General button reset for filters */
 	outline: none;
 }
-#filter .btn-primary.focus,
+#filter .btn-primary.focus, /* Bootstrap focus state */
 .btn-primary:focus {
-	color: #3a8bcd!important;
-	box-shadow: none!important;
+	color: #3a8bcd!important; /* Blue text color on focus, !important for override */
+	box-shadow: none!important; /* Remove Bootstrap's default focus box-shadow */
 }
-#filters .btn-primary {
-	color: #1e1e1e;
+#filters .btn-primary { /* Styling for filter buttons */
+	color: #1e1e1e; /* Dark text color */
 	border: none;
 	font-size: 15px;
 	font-weight: 700;
-	background-color: transparent;
+	background-color: transparent; /* Transparent background */
 }
-/* Isotope Transitions
-------------------------------- */
+
+/* Isotope Transitions (for animated filtering and sorting) */
 .isotope,
 .isotope .item {
   -webkit-transition-duration: 0.8s;
      -moz-transition-duration: 0.8s;
       -ms-transition-duration: 0.8s;
        -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+          transition-duration: 0.8s; /* Duration of the animation */
 }
-
-.isotope {
+.isotope { /* Transition properties for the Isotope container itself (height/width changes) */
   -webkit-transition-property: height, width;
      -moz-transition-property: height, width;
       -ms-transition-property: height, width;
        -o-transition-property: height, width;
           transition-property: height, width;
 }
-
-.isotope .item {
+.isotope .item { /* Transition properties for individual Isotope items (transform/opacity changes) */
   -webkit-transition-property: -webkit-transform, opacity;
      -moz-transition-property:    -moz-transform, opacity;
       -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:         top, left, opacity;
+       -o-transition-property:         top, left, opacity; /* Older Opera support */
           transition-property:         transform, opacity;
 }
 
+/* === Page Navigation Styling (Pagination) === */
 .page-navigation ul {
 	text-align: center;
-	border-top: 1px solid #eee;
-	padding: 30px  0px 0px 0px;
-	margin: 0px 0px 80px 0px;
+	border-top: 1px solid #eee; /* Top border above pagination */
+	padding: 30px  0px 0px 0px; /* Padding above the list */
+	margin: 0px 0px 80px 0px; /* Margin below pagination */
 }
 .page-navigation ul li {
-	display: inline-block;
+	display: inline-block; /* Horizontal list items */
 }
-.page-navigation ul li a {
+.page-navigation ul li a { /* Individual page link/button */
 	width: 40px;
 	height: 40px;
 	display: inline-block;
 	text-align: center;
-	line-height: 38px;
-	border: 1px solid #eee;
-	border-radius: 5px;
+	line-height: 38px; /* Vertically center text (adjust if font size changes) */
+	border: 1px solid #eee; /* Light grey border */
+	border-radius: 5px; /* Rounded corners */
 	font-weight: 700;
-	color: #1e1e1e;
+	color: #1e1e1e; /* Dark text color */
 	font-size: 15px;
 	text-decoration: none;
 	transition: all 0.5s;
 }
 .page-navigation ul li a:hover,
-.page-navigation ul li.current-page a {
-	background-color: #3a8bcd;
-	border-color: #3a8bcd;
-	color: #fff;
+.page-navigation ul li.current-page a { /* Styling for hovered or current page link */
+	background-color: #3a8bcd; /* Blue background */
+	border-color: #3a8bcd; /* Blue border */
+	color: #fff; /* White text */
 }
 
 
-
-/* Single Product Style */
-.single-product .product-slider {
+/* === Single Product Page Style (single-product.html) === */
+.single-product .product-slider { /* Container for product image gallery */
 	padding: 20px;
-	border: 1px solid #eee!important;
+	border: 1px solid #eee!important; /* Light grey border */
 	border-radius: 5px;
 }
-.flexslider {
+.flexslider { /* FlexSlider specific reset */
 	border: none!important;
 }
-#carousel {
+#carousel { /* FlexSlider thumbnail navigation */
 	margin-top: 20px;
 }
-#carousel .slides li {
-	width: 150px!important;
+#carousel .slides li { /* Individual thumbnail item */
+	width: 150px!important; /* Fixed width for thumbnails */
 }
-.single-product .right-content h4 {
+/* Product details on the right side */
+.single-product .right-content h4 { /* Product name */
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 0px;
 }
-.single-product .right-content h6 {
-	color: #3a8bcd;
+.single-product .right-content h6 { /* Product price */
+	color: #3a8bcd; /* Blue price text */
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 10px;
 }
-.single-product .right-content p {
+.single-product .right-content p { /* Product description */
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.single-product .right-content span {
+.single-product .right-content span { /* General span styling within right content (e.g., stock status) */
 	font-size: 14px;
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue text */
 	font-weight: 500;
 	display: inline-block;
 	margin-bottom: 15px;
 }
-.single-product .right-content label {
+.single-product .right-content label { /* Label for quantity input */
 	font-size: 14px;
 	color: #4a4a4a;
 }
-.single-product .right-content .quantity-text {
+.single-product .right-content .quantity-text { /* Quantity input field */
 	margin-left: 10px;
 	width: 44px;
 	height: 44px;
@@ -496,15 +527,15 @@ a {
 	outline: none;
 	border: 1px solid #eee;
 }
-.single-product .right-content .button {
+.single-product .right-content .button { /* "Order Now" or "Add to Cart" button */
 	margin-left: 15px;
 	cursor: pointer;
-	background-color: #3a8bcd;
+	background-color: #3a8bcd; /* Blue background */
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #fff;
+	color: #fff; /* White text */
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -514,68 +545,69 @@ a {
 	box-shadow: none;
 	border: none;
 }
+/* Additional info below product details (categories, share) */
 .single-product .right-content .down-content span {
 	margin-bottom: 0px;
 	display: inline-block;
 	margin-left: 8px;
-	color: #aaa;
+	color: #aaa; /* Grey text for category/share labels */
 }
-.single-product .right-content .down-content span a {
-	color: #aaa;
+.single-product .right-content .down-content span a { /* Links within categories/share */
+	color: #aaa; /* Grey link color */
 	font-weight: 400;
 	margin-left: 4px;
 	transition: all 0.5s;
 }
 .single-product .right-content .down-content span a:hover {
-	color: #3a8bcd;
+	color: #3a8bcd; /* Blue link color on hover */
 }
-.single-product .right-content .down-content span a:hover i {
+.single-product .right-content .down-content span a:hover i { /* Icon hover state */
 	background-color: #3a8bcd;
 }
-.single-product .right-content .down-content span a i {
+.single-product .right-content .down-content span a i { /* Social media icons */
 	transition: all 0.5s;
-	background-color: #aaa;
+	background-color: #aaa; /* Default icon background */
 	width: 26px;
 	height: 26px;
 	display: inline-block;
 	text-align: center;
 	line-height: 26px;
-	border-radius: 50%;
-	color: #fff;
+	border-radius: 50%; /* Circular icons */
+	color: #fff; /* White icon symbol */
 	font-size: 12px;
 	margin-right: 5px;
 }
-.single-product .right-content .down-content .categories {
+.single-product .right-content .down-content .categories { /* Category section */
 	border-top: 1px solid #eee;
 	margin-top: 30px;
 	padding: 10px 0px;
 }
-.single-product .right-content .down-content .share {
+.single-product .right-content .down-content .share { /* Share section */
 	border-top: 1px solid #eee;
 	padding: 10px 0px;
 }
-.single-product .right-content .down-content h6 {
+.single-product .right-content .down-content h6 { /* Headings within category/share */
 	font-size: 14px;
 	color: #4a4a4a;
 	font-weight: 400;
 }
 
 
-
-/* About Us Style */
+/* === About Us Page Style (about.html) === */
 .about-page {
-	margin-top: 50px;
+	margin-top: 50px; /* Adjusted top margin */
     margin-bottom: 80px;
 }
-.about-page .right-content h4 {
+.about-page .right-content h4 { /* Heading in the right content area */
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 0px;
 	margin-bottom: 20px;
 }
-.about-page .left-image img {
-	max-width: 100%;
+.about-page .left-image img { /* Image on the left */
+	max-width: 100%; /* Responsive image */
 }
+/* Styling for share icons/text in about page (similar to single product) */
 .about-page .right-content span {
 	display: inline-block;
 	margin-left: 8px;
@@ -593,44 +625,44 @@ a {
 	font-size: 12px;
 	margin-right: 5px;
 }
-.about-page .right-content .share {
+.about-page .right-content .share { /* Share section container */
 	margin-top: 20px;
 	border-top: 1px solid #eee;
 	padding: 15px 0px;
 }
-.about-page .right-content h6 {
+.about-page .right-content h6 { /* Text labels for share */
 	font-size: 14px;
 	color: #4a4a4a;
 	font-weight: 400;
 }
-.about-page .right-content span a:hover i {
+.about-page .right-content span a:hover i { /* Icon hover state */
 	background-color: #3a8bcd;
 }
 
 
-
-
-/* Contact Page Style */
+/* === Contact Page Style (contact.html) === */
 .contact-page {
-	margin-top: 50px;
+	margin-top: 50px; /* Adjusted top margin */
     margin-bottom: 80px;
 }
+/* Styling for input fields and textarea in the contact form */
 .contact-page .right-content input,
 .contact-page .right-content textarea {
-	border-radius: 0px;
+	border-radius: 0px; /* Square corners for form fields */
 	outline: none;
 	box-shadow: none;
 	font-size: 14px;
-	margin-bottom: 30px;
+	margin-bottom: 30px; /* Space below each field */
 }
-.contact-page .right-content input {
+.contact-page .right-content input { /* Specific height for single-line inputs */
 	height: 44px;
 	line-height: 44px;
 }
-.contact-page .right-content textarea {
+.contact-page .right-content textarea { /* Specific height for textarea */
 	height: 200px;
-	max-height: 280px;
+	max-height: 280px; /* Limit max height */
 }
+/* Share icons styling (similar to other pages) */
 .contact-page .right-content span {
 	display: inline-block;
 	margin-left: 8px;
@@ -648,27 +680,27 @@ a {
 	font-size: 12px;
 	margin-right: 5px;
 }
-.contact-page .right-content .share {
+.contact-page .right-content .share { /* Share section container */
 	margin-top: 30px;
 	border-top: 1px solid #eee;
 	padding: 15px 0px;
 }
-.contact-page .right-content h6 {
+.contact-page .right-content h6 { /* Text labels for share */
 	font-size: 14px;
 	color: #4a4a4a;
 	font-weight: 400;
 }
-.contact-page .right-content span a:hover i {
+.contact-page .right-content span a:hover i { /* Icon hover state */
 	background-color: #3a8bcd;
 }
-.contact-page .right-content .button {
+.contact-page .right-content .button { /* Submit button for contact form */
 	cursor: pointer;
-	background-color: #3a8bcd;
+	background-color: #3a8bcd; /* Blue background */
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #fff;
+	color: #fff; /* White text */
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -680,44 +712,42 @@ a {
 }
 
 
-
-
-
-
-/* Responsive Style */
-@media (max-width: 991px) {
+/* === Responsive Styles === */
+@media (max-width: 991px) { /* Styles for tablets and smaller devices */
 
 	.banner {
-		border-top: none;
-		margin-top: 0px;
+		border-top: none; /* Remove top border if any */
+		margin-top: 0px; /* Adjust banner margin for mobile */
 	}
 	.navbar .navbar-brand {
-		width: auto;
+		width: auto; /* Adjust navbar brand width */
 	}
-	.navbar:after {
+	.navbar:after { /* Remove decorative line below navbar on mobile */
 		display: none;
 	}
+	/* Styling for the collapsed mobile navigation menu */
 	#navbarResponsive {
-	    z-index: 99999;
+	    z-index: 99999; /* Ensure it's above all other content */
 	    position: absolute;
-	    top: 96px;
+	    top: 96px; /* Position below the header */
 	    width: 100%;
 	    text-align: center;
-	    background-color: rgba(250,250,250,0.95);
-	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	    background-color: rgba(250,250,250,0.95); /* Semi-transparent white background */
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1); /* Add shadow for depth */
 	}
-	.navbar-dark .navbar-nav .nav-item {
-		border-bottom: 1px solid #eee;
+	.navbar-dark .navbar-nav .nav-item { /* Styling for individual items in mobile menu */
+		border-bottom: 1px solid #eee; /* Separator line */
 	}
 	.navbar-dark .navbar-nav .nav-item:last-child {
-		border-bottom: none;
+		border-bottom: none; /* No border for the last item */
 	}
 	.navbar-dark .navbar-nav .nav-link {
-		padding: 15px 0px;
+		padding: 15px 0px; /* Adjust padding for mobile nav links */
 	}
 	.featured-page #filters {
-		text-align: right;
+		text-align: right; /* Keep filters to the right if space allows, might need further adjustment */
 	} 
+	/* Adjust top margin for content sections on smaller screens */
 	.single-product .right-content {
 		margin-top: 30px;
 	}
@@ -727,43 +757,45 @@ a {
 	.contact-page .right-content {
 		margin-top: 30px;
 	}
+	/* Remove padding for columns in contact page form on mobile to use full width */
 	.contact-page .right-content .col-md-6,
 	.contact-page .right-content .col-md-12 {
 		padding: 0px;
 	}
 	.featured-page {
-		margin-top: 80px;
+		margin-top: 80px; /* Adjust top margin for featured page */
 	}
 	.about-page,
-	.contact-page {
+	.contact-page { /* Reset top margin for these pages on mobile if banner is removed/altered */
 		margin-top: 0px;
 	}
+} /* End of @media (max-width: 991px) */
 
-}
+@media (max-width: 767px) { /* Styles for small mobile devices */
 
-@media (max-width: 767px) {
-
-	.subscribe-form .main-content form input.button {
+	.subscribe-form .main-content form input.button { /* Stack subscribe button below input */
 		margin-top: 20px;
 	}
-	.featured-page #filters {
+	.featured-page #filters { /* Align filters to the left on very small screens */
 		margin-top: 15px;
 		text-align: left;
 	} 
+} /* End of @media (max-width: 767px) */
 
-}
-.lginbtn{
+/* === Custom Animemāketto Login/Logout Button Styles === */
+/* These styles were likely added to the Tooplate base for the Animemāketto project */
+.lginbtn{ /* Login button */
 	padding: 13px;
-	background-color: #71b7e6;
-	color: black;
+	background-color: #71b7e6; /* Light blue background */
+	color: black; /* Black text */
 	border-radius: 5px;
-	font-weight: 600;
+	font-weight: 600; /* Semi-bold */
 	
   }
-  .logoutbtn{
+  .logoutbtn{ /* Logout button */
 	padding: 13px;
-	background-color: rgb(255, 137, 116);
-	color: black;
+	background-color: rgb(255, 137, 116); /* Light red/coral background */
+	color: black; /* Black text */
 	border-radius: 5px;
-	font-weight: 600;
+	font-weight: 600; /* Semi-bold */
   }

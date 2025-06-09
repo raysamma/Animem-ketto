@@ -33,6 +33,7 @@ https://www.tooplate.com/view/2114-pixie
 
   <body style="background: linear-gradient(45deg, black, transparent);">
 
+    <!-- Navigation Bar Starts Here -->
     <nav class=" navbar-expand-lg navbar-dark static-top" style="padding: 20px;">
       <div >
         <div class="row" style="">
@@ -65,19 +66,23 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </nav>
+    <!-- Navigation Bar Ends Here -->
 
     <!-- Page Content -->
-    <!-- About Page Starts Here -->
+    <!-- Contact Page Content Starts Here -->
     <div class="contact-page">
       <div class="container">
         <div class="row">
+          <!-- Section Heading -->
           <div class="col-md-12">
             <div class="section-heading">
               <div class="line-dec"></div>
               <h1>Contact Us</h1>
             </div>
           </div>
+          <!-- Left Column: Google Map -->
           <div class="col-md-6">
+            <!-- Embedded Google Map Starts Here -->
             <div id="map">
             		<!-- How to change your own map point
                            1. Go to Google Maps
@@ -85,13 +90,15 @@ https://www.tooplate.com/view/2114-pixie
                            3. Click "Share" and choose "Embed map" tab
                            4. Copy only URL and paste it within the src="" field below
                     -->
-
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.1095868946163!2d73.13075167480908!3d21.06828488059094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be060e07393bc51%3A0xf96e044991e337e9!2sUKA%20TARSADIA%20UNIVERSITY.!5e0!3m2!1sen!2sin!4v1682091253093!5m2!1sen!2sin" width="580" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <!-- Embedded Google Map Ends Here -->
           </div>
+          <!-- Right Column: Contact Form -->
           <div class="col-md-6">
             <div class="right-content">
               <div class="container">
+                <!-- Contact Form Starts Here -->
                 <form id="contact" action="" method="post">
                   <div class="row">
                     <div class="col-md-6">
@@ -121,29 +128,34 @@ https://www.tooplate.com/view/2114-pixie
                     </div>
                   </div>
                 </form>
+                <!-- Contact Form Ends Here -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- About Page Ends Here -->
+    <!-- Contact Page Content Ends Here -->
+    <!-- Note: Explicit contact information (address, phone, email) is not present here, but implied by the map and form. -->
    
 
 
-
-    <!-- Sub Footer Starts Here -->
+    <!-- Footer Starts Here -->
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="sitename">
+              <!-- Site logo and name in footer -->
               <img src="images/favicon.png" alt="" width="50px">  Animemāketto
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Main Footer Ends Here -->
+
+    <!-- Sub Footer Starts Here (for copyright, etc.) -->
     <div class="sub-footer">
       <div class="container">
         <div class="row">
@@ -156,6 +168,7 @@ https://www.tooplate.com/view/2114-pixie
         </div>
       </div>
     </div>
+    <!-- Sub Footer Ends Here -->
 
 
     <!-- Bootstrap core JavaScript -->
@@ -170,6 +183,7 @@ https://www.tooplate.com/view/2114-pixie
     <script src="assets/js/flex-slider.js"></script>
 
 
+    <!-- Inline script (consider moving to a .js file) -->
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
