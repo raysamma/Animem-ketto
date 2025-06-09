@@ -13,32 +13,40 @@
 <body>
 
     <body class="img js-fullheight" style="background-image: url(images/wallpaperflare.com_wallpaper.jpg);" alt="asdas">
+        <!-- Main Login Section -->
         <section class="ftco-section">
             <div class="container">
+                <!-- Heading / Link to Homepage (implied) -->
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center mb-5">
                         <h2 class="heading-section">Animemāketto</h2>
                     </div>
                 </div>
+                <!-- Login Form Container -->
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4">
                         <div class="login-wrap p-0">
                             <h3 class="mb-4 text-center">Have an account?</h3>
+                            <!-- Login Form Starts Here -->
                             <form class="signin-form">
+                                <!-- Username Field -->
                                 <div class="form-group">
                                     <input type="text" class="form-control uname" placeholder="Username" id="username">
                                 </div>
                                 <br>
+                                <!-- Password Field -->
                                 <div class="form-group">
                                     <input type="password" class="form-control passbox" placeholder="Password" id="pass">
                                     <span toggle="#password-field"
                                         class="fa fa-fw fa-eye field-icon toggle-password"></span>
                                 </div>
                                 <br>
+                                <!-- Submit Button -->
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary loginbtn submit px-3" onclick="myFunction()">Sign In</button>
                                 </div>
                                 <br>
+                                <!-- Additional Options: Remember Me & Forgot Password -->
                                 <div class="form-group d-md-flex">
                                     <div class="w-50">
                                         <label class="checkbox-wrap checkbox-primary rm">Remember Me
@@ -48,23 +56,32 @@
                                         </label>
                                     </div>
                                     <br>
+                                    <!-- Forgot Password Link -->
                                     <div class="w-50 text-md-right">
                                         <a href="#" style="color: #fff">Forgot Password</a>
                                     </div>
                                 </div>
                             </form>
+                            <!-- Login Form Ends Here -->
+                            <!-- Link to Registration Page -->
                             <p class="w-100 text-center">If not registered with us <a class="clickhere"
                                     href="Registration.html">Click here </a> </p>
                             <div class="social d-flex text-center">
+                                <!-- Social login buttons could go here if implemented -->
                             </div>
                         </div>
                     </div>
                 </div>
+            </div> <!-- Closing container -->
         </section>
+        <!-- Main Login Section Ends Here -->
+
+        <!-- Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <!-- Cloudflare Beacon Script (third-party) -->
         <script defer=""
             src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996"
             integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ=="
@@ -72,6 +89,7 @@
             crossorigin="anonymous"></script>
 
     </body>
+    <!-- Custom JavaScript for form validation and redirection -->
     <script>
         function myFunction() {
             var username = document.getElementById("username").value;

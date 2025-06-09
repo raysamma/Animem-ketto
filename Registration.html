@@ -8,36 +8,47 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body class="img js-fullheight" style="background-image: url(images/register.png);"alt="asdas"></body>
+  <!-- Main Registration Container -->
   <div class="container">
+    <!-- Site Name / Heading (acts as a link to homepage - implied) -->
     <h2 class="heading-section">Animemāketto</h2>
 
+    <!-- Registration Form Title -->
     <div class="title">Registration</div>
     <div class="content">
+      <!-- Registration Form Starts Here -->
       <form>
+        <!-- User Input Fields Container -->
         <div class="user-details">
           
+          <!-- Username Field -->
           <div class="input-box">
             <span class="details">Username</span>
             <input type="text" id="username" placeholder="Enter your username" >
           </div>
+          <!-- Email Field -->
           <div class="input-box">
             <span class="details">Email</span>
             <input type="text" id="email" placeholder="Enter your email" >
           </div>
-        
+          <!-- Password Field -->
           <div class="input-box">
             <span class="details">Password</span>
             <input type="text" id="password" placeholder="Enter your password" >
           </div>
+          <!-- Confirm Password Field -->
           <div class="input-box">
             <span class="details">Confirm Password</span>
             <input type="text" id="conpassword" placeholder="Confirm your password" >
           </div>
         </div>
+        <!-- User Input Fields Container Ends Here -->
+
+        <!-- Gender Selection Section -->
         <div class="gender-details">
           <input type="radio" name="gender" id="dot-1">
           <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
+          <input type="radio" name="gender" id="dot-3"> <!-- Note: Third radio button without a label -->
           <span class="gender-title">Gender</span>
           <div class="category">
             <label for="dot-1">
@@ -50,15 +61,22 @@
           </label>
           </div>
         </div>
+        <!-- Gender Selection Section Ends Here -->
+
+        <!-- Submit Button -->
         <div class="button">
           <input type="submit" onclick="validateIfEmptyOrNot()" value="Register">
         </div>
+        <!-- Link to Login Page -->
         <a href="login.html">Back</a>
       </form>
+      <!-- Registration Form Ends Here -->
     </div>
   </div>
+  <!-- Main Registration Container Ends Here -->
 
 </body>
+<!-- Custom JavaScript for form validation -->
 <script>
   function validateIfEmptyOrNot(){
     var username = document.getElementById("username").value;
